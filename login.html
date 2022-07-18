@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Assignment: Mission Control Operator Login
+Mariam Ahady
+marahady@uat.edu-->
+<html>
+    <head>
+        <!-- We are linking our script and style sheet. I missed the .js on my 
+        javascript file and it didn't link properly. Now it works.-->
+        <script src="loginCode.js"></script>
+        <link rel="stylesheet" href="loginStyle.css">
+        <title>
+            UAT Space Login Page
+        </title>
+        </head>
+        <body id="bodybackground">
+            <h1>Welcome to the UATSpace Login Page</h1>
+             Please Log in below<br>
+             <br>
+             <div id="loginStatus">Login Status</div>
+             <br>
+        <!--We are creating a form, with inputs and ids.-->
+        <form id="creditSubmit" onsubmit="return false">
+        First Name:<input type="text" id="fName"><br>
+        <br>
+        Last Name: <input type="text" id="lName"><br>
+        <br>
+        Badge Number: <input type="number" id="badgeID"><br>
+        <br>
+        <!--To insert a button we can also use the input tag. 
+        also use onclick tag and place the function name to link it to the function-->
+        <input type="submit" onclick="checkCreds();" class="button">
+        <br>
+        
+        </form>
+        <br>
+        <!--We are linking two other pages to our index page ./ means same directory.-->
+        <a href="./index.html";>Go to Home</a> | <a href="./boards.html";>Go to Boards Page</a> | <a href="./uatSpace.html">Go to UAT Space Page</a>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>

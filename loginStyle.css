@@ -1,0 +1,13 @@
+/*I tried to use an id and change background and it didn't work. 
+but using body{} worked.*/
+body {
+    background-image: linear-gradient(to right, rgb(221, 198, 221),rgb(238, 243, 213));
+}
+/*we use dot because button was a class in our html file.*/
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(102, 204, 170);
+    border-radius: 15px;
+    border-color: rgb(157, 132, 224);
+}

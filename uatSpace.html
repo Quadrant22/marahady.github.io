@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--Assignment: Event Driven Programming - Buttons
+Mariam Ahady
+marahady@uat.edu-->
+<html>
+    <head>
+        <!--All .js, .css, files are linked.--> 
+        <script src="launchDataDis.js"></script>
+        <script src="dataLoader-1.js"></script>
+        <script src="code.js"></script>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+        <title id="myName">
+            Mariam Ahady UAT Space Page
+        </title>
+        <!--these are the variables for "launchDataDis.js1", file.
+        We are creating an object of the date function. We need to add time and data that is why. --> 
+        <script>
+            var theTime = new Date();
+            var time_interval = 5000;
+            var last_iteration = 0;
+            var running = true;
+            var index = 0;
+            var timer;
+            var data = getData();
+        </script>
+    <body id="pageBackground">
+        <!--We are creating a table with two rows, 
+        'tr' stands for table row and 'td' stands for table data-->
+        <table>
+            <tr>
+                <td><img src="UATspaceLogo-2.jpg"></td>
+                <td>
+                     <h1>
+                    UAT Space Program
+                    </h1>
+            </td>
+            </tr>
+        </table>
+
+    <!--Data Table, with id to be used later and border and width.-->
+    <table id="data" border="2" width="70%">
+    <!--col stands for column-->    
+        <col style="width: 35%">
+        <col style="width: 35%">
+     <!--thead stands for table header-->  
+        <thead id="cool">
+             <!--th stands for table head but used if a cell is required to be used as a header-->  
+            <th>
+                Data type
+            </th>
+            <th>
+                Reading
+            </th>
+        </thead>
+        <tbody id="tableBody">
+             <!--tr stands for table row, and each row has its own id="second", 
+            which later will be used in css to stye this exact row-->  
+            <tr id="seconds">
+                 <!--WE are removing all <td> to leave it open to insert the new data from the large data file.-->  
+                
+            </tr>
+            <tr id="latitude"></tr>
+            <tr id="longitude"></tr>
+            <tr id="gps_altitude"></tr>
+            <tr id="bmp_altitude"></tr>
+            <tr id="bmp_pressure"></tr>
+            <tr id="bmp_temperature"></tr>
+            <tr id="dig_temperature"></tr>
+            <tr id="css_temperature"></tr>
+            <tr id="css_eC02"></tr>
+            <tr id="css_TVOC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelx"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+
+    </table>
+
+    <!--Countdown timer title-->
+    <h2>Countdown Timer</h2>
+    <!--Status of current countdown timer-->
+    <!-- we need the timer to change, so we use div for division, defines a particular section-->
+    <div id="countdownStatus">Timer Status</div><br>
+    <br>
+    <!--We have changed the function from start() to blastoffTimerV2(), so now
+    we are adding it to the button. We are also giving the button an 'id' but this 
+    time with a class. -->
+    <button onclick="startFun();" class="button" id="startButton">Start</button>
+    
+    <button onclick="stopFun();" class="button" id="stopButton">
+        Stop
+    </button><br>
+    <br>
+    The current time is: <div id="clockTime">Press start to display current time.</div>
+
+    <br>
+    <h3>Play space station sounds</h3>
+    <h1>Warning, it may get loud</h1>
+    <button class="lgButton" style="margin:5px" onclick="playStation();">Play space station sound</button>
+    
+    <button class="introButton" style="margin:5px" onclick="playIntro();">Play Intro Sound</button>
+    </body>
+    </head>
+<br>
+<br>
+<br>
+<br>
+
+ <!-- Building Blocks Assignment:
+    1. Button to play. 
+    2. Die1 and Die2 Status line
+    3. Sum of dice
+    4. Crap status line. 
+    5. Header saying Craps played here.  
+    
+    The story of Craps Game: 3-4 sentences. 
+    -->
+
+    <!--The first heading goes here-->
+    <h2 id="title">Play Craps to win your ticket!</h2>
+    <div id="CrapsParagraph"><p>If you play craps, there is a 50% chance of winning your seat at the <br> 'TXT-BlueGalactic' Space Tour!!<br>
+        'TXT-BlueGalactic' is one of the best and afordable programs to get YOU, <br>
+        the most amazing world view from above earth. <br> 
+        The flight is four to six hours long, and two hours of the tour is spent at 25 miles above earth.<br>
+        <br>
+       Game Rules:<br>
+       If sum of die1 and die2 were 7 or 11,<br> you lose.
+       If die1 and die2 were matching,<br> and even,
+        you win. 
+
+
+
+    </p></div> <br>
+    <h4 id="ready">Ready to play?</h4>
+    
+    <button id="button" onclick="playCraps()">Play Craps</button><br>
+    <br>
+    <!--dice rolling-->
+    <div id="die1Rolling">Die1</div> 
+    <div id="die2Rolling">Die2</div>
+    <div id="sumOfDice">Sum</div><br>
+    <div id="crapsStatus">Craps Status</div><br>
+
+<br>
+<br><br>
+<br>
+<br>
+
+<!--We are linking two other pages to our index page ./ means same directory.-->
+<a href="./index.html";>Go to Home</a> | <a href="./boards.html";>Go to Boards Page</a> | <a href="./uatSpace.html">Go to UAT Space Page</a>
+<br>
+
+
+</html>

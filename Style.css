@@ -1,0 +1,83 @@
+/*This line will style the entire page. in html I created an id="pageBackground", 
+now using a # we are styling it.*/
+#pageBackground{
+    background-image: linear-gradient(to right, rgb(26, 153, 226), rgb(211, 238, 90));
+
+}
+/*This style was for a different assignment. To use linear-gradient, we need to 
+use the background-image tag, it won't work with the background-color tag.*/
+#title {
+    background-image: linear-gradient(to right, rgb(216, 152, 216),rgb(175, 184, 134));
+}
+#ready {
+    background-image: linear-gradient(to right, rgb(182, 127, 182),rgb(175, 184, 134));
+}
+
+#CrapsParagraph {
+    background-color: beige;
+    background-image: linear-gradient(to right,rgb(218, 163, 218),rgb(190, 190, 138));
+}
+
+#button {
+    background-color: rgb(25, 209, 209);
+    border: 1pxl solid aliceblue;
+}
+/*This style was for the playcraps game.*/
+#die1Rolling {
+    background-image: linear-gradient(to right, rgb(26, 153, 226), rgb(211, 238, 90));
+}
+#die2Rolling {
+    background-image: linear-gradient(to right, rgb(26, 153, 226), rgb(211, 238, 90));
+}
+#sumOfDice {
+    background-image: linear-gradient(to right, rgb(26, 153, 226), rgb(211, 238, 90));
+}
+#crapsStatus {
+    background-image: linear-gradient(to right, rgb(134, 190, 162), rgb(211, 238, 90));
+    font-size: 30px;
+}
+
+#countdownStatus{
+    background-color: rgb(216, 150, 150);
+}
+
+/*instead if 'id' we used a class="button" on our button. So when we style in CSS we will
+have to use a 'dot' to refer to that class.*/
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(102, 204, 170);
+    border-radius: 15px;
+    border-color: rgb(157, 132, 224);
+}
+/*This style is not working, not sure why*/
+#myName{
+    background-color: rgb(102, 204, 170);
+    font: color green;
+}
+/*This style is for the first header in the table.*/
+#cool{
+    background-color: rgb(68, 180, 143);
+}
+/*This style is for the table body, it uses linear=gradient to add two colors.
+to right, rgb is used.*/
+#tableBody{
+    background-image: linear-gradient(to right, rgb(230, 132, 230),rgb(175, 184, 134));
+
+}
+/*The first large button that plays the space sound.*/
+.lgButton{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(102, 204, 170);
+    border-radius: 15px;
+    border-color: rgb(157, 132, 224);
+}
+/*The second button that plays the intro sound.*/
+.introButton{
+    width: 85px;
+    height: 35px;
+    background-color: rgb(102, 204, 170);
+    border-radius: 15px;
+    border-color: rgb(157, 132, 224);
+}
